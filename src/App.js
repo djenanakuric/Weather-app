@@ -3,14 +3,17 @@ import axios from "axios";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Content from "./Components/Content";
+
+
 function App() {
   const [weatherInfo, setWeatherInfo] = useState('');
+  const [city, setCity] = useState('Sarajevo');
   useEffect ( () => {
     fetchPopular();
-  }, []);
+  }, [city]);
 
   const fetchPopular = async () => {
-    const data = await fetch("https://weatherapi-com.p.rapidapi.com/forecast.json?q=London&days=3", {
+    const data = await fetch(`https://weatherapi-com.p.rapidapi.com/forecast.json?q=${city}&days=4`, {
     "method": "GET",
     "headers": {
       "x-rapidapi-host": "weatherapi-com.p.rapidapi.com",
@@ -26,7 +29,7 @@ function App() {
  
   return (
     <div className="App">
-      <Header />
+      <Header city = {city} setCity={setCity}/>
       <Content weatherInfo = {weatherInfo}/>
       <Footer />
     </div>

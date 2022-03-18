@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 10%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,15 +12,73 @@ code {
     monospace;
 }
 
-.Current-day {
-  height: 50%;
-  width: 40%;
+.Content {
+  width: 100%;
+  height: 70%;
+  padding: 4%;
+  border: solid 3px;
+}
+.current-city-info {
+  height: 100%;
+  width: 50%;
+  border-right: solid rgb(185, 185, 216);
 }
 .weather-image-main {
   height: 100%;
   width: 100%
 }
 
-.City-info {
-  
+.main-table h1 {
+  font-family: Corbel;
+  font-size: 150%;
+
+}
+.table-main h2{
+  font-family: Corbel;
+  font-size: 100%;
+}
+
+.image-col {
+  width: 56%;
+  height: 40%;
+}
+
+.table-main-other-info p{
+  font-weight: bold;
+  font-family: Corbel;
+  font-size: 150%;
+}
+.next-day1 p{
+  font-weight: bold;
+  font-family: Corbel;
+  font-size: 150%;
+}
+.next-day2 p{
+  font-weight: bold;
+  font-family: Corbel;
+  font-size: 150%;
+}
+
+.table-main-other-info, .next-day1, .next-day2 h3{
+  font-family: Corbel;
+  font-size: 105%;
+}
+.next-day1 h3{
+  font-family: Corbel;
+  font-size: 105%;
+}
+.next-day2 h3{
+  font-family: Corbel;
+  font-size: 105%;
+}
+
+.next-day1 {
+  width: 26%;
+  border-right: solid rgb(185, 185, 216);
+  text-align: center;
+}
+
+.next-day2 {
+  width: 28%;
+  text-align: center;
 }
