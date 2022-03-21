@@ -116,3 +116,7 @@ code {
   height: 100%;
   width: 100%
 }
+.City-info-main h1{
+  font-size: 250%;
+  font-family: Corbel;
+}
