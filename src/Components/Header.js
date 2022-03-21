@@ -3,10 +3,9 @@ import React, {useState} from 'react';
 function Header( {city, setCity}) {
   
   const [getValue, setGetValue] = useState('');
-  const Submit = (e) => {
+ const Submit = (e) => {
         e.preventDefault();
-        setCity(getValue);
-        setGetValue('');
+        if (getValue !== '') setCity(getValue);
     }
   return (
     <div className='header'>
