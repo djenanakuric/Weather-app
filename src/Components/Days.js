@@ -1,7 +1,7 @@
 import React from 'react';
 import NextDay from './NextDay';
 
-function Days ({ weatherInfo, date}) {
+function Days ({ weatherInfo, date, tomorow, dayNext}) {
     return (
         <div className='days'>
             <table className='main-table'>
@@ -32,10 +32,10 @@ function Days ({ weatherInfo, date}) {
                     </table>
                     </th>
                     <th className='next-day1'>
-                    <NextDay weatherInfo={weatherInfo.forecast.forecastday[1]} />
+                    <NextDay weatherInfo={weatherInfo.forecast.forecastday[1]} tomorow = {tomorow} />
                     </th>
                     <th className='next-day2'>
-                    <NextDay weatherInfo={weatherInfo.forecast.forecastday[2]} />
+                    <NextDay weatherInfo={weatherInfo.forecast.forecastday[2]} tomorow={dayNext} />
                     </th>
                 </tr>
             </table>
