@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 
 function Header( {city, setCity}) {
   
-  const [getValue, setGetValue] = useState('');
- const Submit = (e) => {
+  const [getValue, setGetValue] = useState('Sarajevo');
+  const Submit = (e) => {
         e.preventDefault();
         if (getValue !== '') setCity(getValue);
     }

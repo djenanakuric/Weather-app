@@ -12,7 +12,7 @@ function Days ({ weatherInfo, date, tomorow, dayNext}) {
                             <th className='image-col'>
                                 <img className='weather-image-main' src={weatherInfo.current.condition.icon} alt="" />
                             </th>
-                            <th>
+                            <th className='City-info-main'>
                                 <h1>{weatherInfo.location.name}</h1>
                                 <h2>{weatherInfo.location.country}</h2>
                                 <h2>{date}</h2>
